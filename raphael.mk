@@ -10,6 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common ASCP stuff.
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)

@@ -8,13 +8,19 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ASCP stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-PRODUCT_NAME := lineage_raphael
+# Flags
+TARGET_DISABLE_EPPE = true
+ASCP_MAINTAINER = BULLA
+WITH_BCR := true
+WITH_REVANCED := true
+
+PRODUCT_NAME := raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

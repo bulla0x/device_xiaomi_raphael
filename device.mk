@@ -80,5 +80,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Task
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/etc/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/raphael/raphael-vendor.mk)

@@ -19,7 +19,7 @@ $(call inherit-product, device/xiaomi/raphael/device.mk)
 TARGET_DISABLE_EPPE = true
 ASCP_MAINTAINER = BULLA
 WITH_BCR := true
-WITH_REVANCED := true
+WITH_REVANCED := false
 
 PRODUCT_NAME := raphael
 PRODUCT_DEVICE := raphael

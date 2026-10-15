@@ -316,23 +316,6 @@
       "Type": "Property"
     },
     {
-      "Name": "SchedBoost",
-      "Paths": [
-        "/proc/sys/kernel/sched_boost"
-      ],
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 1,
-      "ResetOnInit": true,
-      "Type": "File",
-      "Truncate": true,
-      "HoldFd": false,
-      "WriteOnly": false,
-      "AllowFailure": true
-    },
-    {
       "Name": "CpuLlccDdrBwMin",
       "Paths": [
         "/sys/class/devfreq/soc:qcom,cpu-llcc-ddr-bw/min_freq"
@@ -434,122 +417,80 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 200,
-      "Value": "1286400"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUBigPlusClusterMinFreq",
-      "Duration": 200,
-      "Value": "1286400"
+      "Duration": 120,
+      "Value": "1056000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 200,
+      "Duration": 120,
       "Value": "1113600"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "GPUBusMinFreq",
-      "Duration": 200,
-      "Value": "3879"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "SchedBoost",
-      "Duration": 200,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 200,
-      "Value": "2c"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CpuLlccDdrBwMin",
-      "Duration": 200,
-      "Value": "3879"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CpuCpuLlccBwMin",
-      "Duration": 200,
-      "Value": "7110"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigPlusClusterMaxFreq",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "9999999"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "1920000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigPlusClusterMinFreq",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "1920000"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "1113600"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "2c"
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "SchedBoost",
-      "Duration": 2000,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CpuLlccDdrBwMin",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "5931"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "CpuCpuLlccBwMin",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "9155"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceClkOn",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUForceRailOn",
-      "Duration": 2000,
+      "Duration": 1200,
       "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
       "Node": "GPUIdleTimer",
-      "Duration": 2000,
-      "Value": "10000"
+      "Duration": 1200,
+      "Value": "80"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -717,7 +658,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "345000000"
+      "Value": "257000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
